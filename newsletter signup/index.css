@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: #232742;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: #36384d;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100vh;
+}
+.container{
+    background-color: #fff;
+    display: flex;
+    border-radius: 13px;
+    height: auto;
+    justify-content: space-between;
+    padding: 20px;
+}
+.right_side > img{
+    max-height: 60vh;
+    margin-bottom: -5px;
+}
+.left_side{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 65%;
+    padding: 0 5%;
+    padding-top: 5%;
+}
+h1{
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+h4{
+    padding-bottom: 18px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+}
+p{
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+p > img{
+    width: 15px;
+    margin-right: 5px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 5% 0;
+}
+label{
+    font-size: 12px;
+    font-weight: 500;
+    padding-bottom: 2px;
+}
+input{
+    padding: 12px 15px;
+    font-size: 11px;
+    border-radius: 5px;
+    border: 1px solid whitesmoke;
+    margin-bottom: 3%;
+}
+button{
+    background-color: #232742;
+    color: #fff;
+    font-weight: 500;
+    border: none;
+    padding: 10px 0;
+    border-radius: 5px;
+    font-size: 11px;
+}
+button:hover{
+    background-color: #ff5e5a;
+    transform: scale(1.02);
+    transition: all ease-in-out 0.5s;
+}
+.success_message > img{
+    max-width: 50px;
+    margin: 5% 0;
+}
+.success_message > h2{
+    color: #232742;
+    font-size: 26px;
+    font-weight: 700;
+}
+.success_message{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 13px;
+    padding: 3%;
+    display: none;
+}
+.success_message > button{
+    margin: 3% 0;
+}
+.success_message p {
+    font-size: 12px;
+    font-weight: 500;
+    max-width: 300px;
+    padding: 4% 0;
+    line-height: 18px;
+}
+.mobile{
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    body{
+        background-color: #fff;
+    }
+    .container{
+        flex-direction: column-reverse;
+        padding: 0;
+        align-items: center;
+        height: 100vh;
+        justify-content: left;
+        margin: 0;
+    }
+    .right_side{
+        padding: 0;
+        display: flex;
+        align-items: center;
+    }
+    .right_side > img{
+        width: 100vw;
+    }
+    .left_side{
+        width: 100vw;
+        padding-top: 10%;
+    }
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: flex;
+    }
+    h1{
+        font-size: 50px;
+        padding: 18px 0;
+    }
+    h4{
+        padding-bottom: 5px 0;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+    }
+    p{
+        font-size: 18px;
+        padding-bottom: 20px;
+        display: flex;
+        align-items: center;
+    }
+    p > img{
+        width: 25px;
+        margin-right: 13px;
+    }
+    label{
+        font-size: 16px;
+        font-weight: 500;
+        padding: 5px 0;
+    }
+    input{
+        padding: 15px 18px;
+        font-size: 18px;
+        border-radius: 5px;
+        border: 2px solid rgb(235, 234, 234);
+        margin-bottom: 7%;
+    }
+    button{
+        padding: 15px 0;
+        border-radius: 5px;
+        font-size: 18px;
+    }
+    .success_message{
+        display: none;
+        padding: 8%;
+        justify-content: end;
+        height: 100%;
+    }
+    .success_message > button{
+        margin: 30vh 0 3vh 0;
+    }
+    .success_message > h2{
+        font-size: 40px;
+        padding-top: 5%;
+    }
+    .success_message p{
+        font-size: 18px;
+        padding: 6% 0;
+        width: 100%;
+        line-height: 24px;
+    }
+}
